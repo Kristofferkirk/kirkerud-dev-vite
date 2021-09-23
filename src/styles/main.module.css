@@ -1,0 +1,308 @@
+﻿@import url("https://fonts.googleapis.com/css2?family=Open+Sans+Condensed:wght@300&family=Rock+Salt&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Georama:wght@700&family=Poppins&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Cinzel&display=swap");
+
+.container {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  scroll-padding: 40px;
+  background-color: rgba(255, 255, 255, 0.192);
+}
+
+.main {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  scroll-behavior: smooth;
+}
+
+.footer {
+  width: 100%;
+  height: 100%;
+  border-top: 1px solid #eaeaea;
+  display: flex;
+  background-color: rgba(255, 255, 255, 0.15);
+  backdrop-filter: blur(5px);
+  justify-content: center;
+  align-items: center;
+  position: sticky;
+}
+
+.footer a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-grow: 1;
+}
+
+.title a {
+  color: #0070f3;
+  text-decoration: none;
+}
+
+.title a:hover,
+.title a:focus,
+.title a:active {
+  text-decoration: underline;
+}
+
+.title {
+  position: sticky;
+  top: 0;
+  padding-left: 20px;
+  font-family: "Rock Salt", cursive;
+  font-size: 2rem;
+  z-index: 9999;
+}
+
+.georamaTitle {
+  font-family: "Georama", sans-serif;
+  font-size: 3rem;
+  text-shadow: 1px 1px 2px black;
+}
+
+.title,
+.description {
+  text-align: left;
+}
+
+.description {
+  line-height: 1.5;
+  font-size: 1.5rem;
+  font-family: "Open Sans Condensed", sans-serif;
+}
+
+.centerDescription {
+  line-height: 1.5;
+  font-size: 1.5rem;
+  font-family: "Open Sans Condensed", sans-serif;
+  text-align: center;
+}
+
+.code {
+  background: #fafafa;
+  border-radius: 5px;
+  padding: 0.75rem;
+  font-size: 1.1rem;
+  font-family: Menlo, Monaco, Lucida Console, Liberation Mono, DejaVu Sans Mono,
+    Bitstream Vera Sans Mono, Courier New, monospace;
+}
+
+.grid {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  max-width: 800px;
+  margin-top: 3rem;
+}
+
+.groupedGrid {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  max-width: 800px;
+}
+.groupedGrid > .glassCard {
+  max-width: 100%;
+  min-height: 500px;
+  width: 30vw;
+  margin: 10px;
+}
+.employment {
+  height: 100px;
+}
+
+.gridFull {
+  display: block;
+  align-items: center;
+  margin-top: 3rem;
+  background-position: center;
+  background-size: auto;
+  background-image: url("https://images.pexels.com/photos/1181271/pexels-photo-1181271.jpeg?auto=compress&cs=tinysrgb&dpr=3&h=750&w=1260");
+}
+
+.glassCard {
+  background: rgba(255, 255, 255, 0.5);
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+  backdrop-filter: blur(4px);
+  -webkit-backdrop-filter: blur(4px);
+  border-radius: 10px;
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  width: 50%;
+  margin-top: 2rem;
+  min-height: 50%;
+  padding: 1rem;
+}
+
+.iconContainer {
+  width: 80%;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-items: center;
+
+  margin-top: 120px;
+}
+
+.regularIcon {
+  width: 2rem;
+  height: 200px;
+  align-self: center;
+  animation-duration: 1.8s;
+  animation-iteration-count: infinite;
+  animation-name: bumpingArrow;
+}
+
+.card {
+  margin: 1rem;
+  padding: 1.5rem;
+  text-align: left;
+  color: inherit;
+  text-decoration: none;
+  background-color: rgba(255, 255, 255, 0.7);
+  backdrop-filter: blur(3px);
+  border: 1px solid #eaeaea;
+  border-radius: 10px;
+  transition: color 0.15s ease, border-color 0.15s ease;
+  width: 45%;
+}
+
+.card:hover,
+.card:focus,
+.card:active {
+  color: #00a6f3e1;
+  border-color: #00a6f3e1;
+}
+
+.card h2 {
+  margin: 0 0 1rem 0;
+  font-size: 1.5rem;
+}
+
+.card p {
+  margin: 0;
+  font-size: 1.25rem;
+  line-height: 1.5;
+}
+
+.logo {
+  height: 1em;
+  margin-left: 0.5rem;
+}
+
+.profile {
+  border-radius: 2%;
+  align-self: left;
+}
+
+.section {
+  height: 100vh !important;
+  width: 100% !important;
+  display: flex;
+  overflow-y: scroll;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  scroll-snap-align: start;
+  animation: fadeIn 5s;
+  -webkit-animation: fadeIn 5s;
+  -moz-animation: fadeIn 5s;
+  -o-animation: fadeIn 5s;
+  -ms-animation: fadeIn 5s;
+}
+
+@media (max-width: 600px) {
+  .grid {
+    margin-top: 50px;
+    width: 100%;
+    flex-direction: column;
+  }
+
+  .iconContainer {
+    margin-top: 20px;
+  }
+  .groupedGrid {
+    flex-wrap: wrap;
+    width: 300px;
+    min-height: 300px;
+
+    width: 100%;
+    margin: 10px;
+  }
+  .title {
+    font-size: 1.5rem;
+  }
+  .card {
+    margin: 0.2rem;
+    padding: 1rem;
+  }
+  .glassCard {
+    width: 80% !important;
+    margin-top: 2rem;
+    min-height: 0%;
+    overflow-y: scroll;
+  }
+  .georamaTitle {
+    font-size: 2rem;
+    margin-top: 35px;
+  }
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@-moz-keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@-webkit-keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@-o-keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@-ms-keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes bumpingArrow {
+  from {
+    padding-top: 0px;
+  }
+  to {
+    padding-top: 50px;
+  }
+}
