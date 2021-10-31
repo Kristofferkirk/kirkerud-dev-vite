@@ -29,10 +29,10 @@ export default function App() {
             <div className={styles.glassCard}>
               <img src={profilePicture} />
 
-              <p className={styles.description}>
+              <p className={styles.description + " mt-4"}>
                 Hello! My name is Kristoffer, i am a fullstack developer from
                 Gothenburg, Sweden. I love everything tech related and i am
-                always curious to learn more. I started my journey as a
+                always curious to learn more. <br /> I started my journey as a
                 developer in 2015 and been hooked ever since.
               </p>
             </div>
@@ -52,20 +52,31 @@ export default function App() {
           </div>
           <div className={styles.groupedGrid}>
             <div className={styles.glassCard}>
-              <h2 className="font-bold text-lg text-center">Frontend</h2>
-              <SkillProgressBar title="React.js" progress={4} />
+              <h2 className="font-bold text-lg text-center">
+                Programming Languages
+              </h2>
               <SkillProgressBar title="Javascript" progress={4} />
               <SkillProgressBar title="HTML" progress={4} />
-              <SkillProgressBar title="CSS" progress={3} />
-              <SkillProgressBar title="Angular 4" progress={2} />
-              <SkillProgressBar title="Vue" progress={2} />
-            </div>
-            <div className={styles.glassCard}>
-              <h2 className="font-bold text-lg text-center">Backend</h2>
+              <SkillProgressBar title="Powershell/Bash" progress={4} />
               <SkillProgressBar title="C#" progress={3} />
               <SkillProgressBar title="Python" progress={3} />
+              <SkillProgressBar title="CSS" progress={3} />
+            </div>
+            <div className={styles.glassCard}>
+              <h2 className="font-bold text-lg text-center">Frameworks</h2>
+              <SkillProgressBar title="React.js" progress={4} />
               <SkillProgressBar title="Node.js" progress={3} />
-              <SkillProgressBar title="Java" progress={2} />
+              <SkillProgressBar title="Ag-grid" progress={3} />
+              <SkillProgressBar title="Bootstrap" progress={3} />
+              <SkillProgressBar title=".NET Core" progress={3} />
+              <SkillProgressBar title="Tailwind" progress={2} />
+              <SkillProgressBar title="Angular 4" progress={2} />
+            </div>
+            <div className={styles.glassCard}>
+              <h2 className="font-bold text-lg text-center">Testing</h2>
+              <SkillProgressBar title="Puppeteer" progress={4} />
+              <SkillProgressBar title="Jest" progress={4} />
+              <SkillProgressBar title="Playwright" progress={3} />
             </div>
             <div className={styles.glassCard}>
               <h2 className="font-bold text-lg text-center">Cloud</h2>
@@ -80,7 +91,7 @@ export default function App() {
               <h2 className="font-bold text-lg text-center">Tools</h2>
               <SkillProgressBar title="VSCode" progress={5} />
               <SkillProgressBar title="Docker" progress={4} />
-              <SkillProgressBar title="Powershell" progress={4} />
+
               <SkillProgressBar title="Git" progress={4} />
               <SkillProgressBar title="Microsoft Teams" progress={4} />
               <SkillProgressBar title="Ubuntu" progress={3} />
@@ -114,13 +125,13 @@ export default function App() {
                   target="_blank"
                   className="ml-2"
                 >
-                  {/* <Image
+                  <img
                     className="bg-white rounded-lg"
                     width={60}
                     height={60}
                     alt="linkedin"
                     src={linkedin}
-                  /> */}
+                  />
                 </a>
                 <a
                   href="https://twitter.com/kriskirkerud"
@@ -128,13 +139,13 @@ export default function App() {
                   target="_blank"
                   className="ml-2"
                 >
-                  {/*  <Image
+                  <img
                     width={60}
                     className="bg-white rounded-lg"
                     height={60}
                     alt="twitter"
                     src={twitterLink}
-                  /> */}
+                  />
                 </a>
               </div>
             </div>
@@ -148,7 +159,7 @@ export default function App() {
                   rel="noreferrer"
                   href="https://github.com/Kristofferkirk"
                 >
-                  {/*  <Image width={60} height={60} alt="github" src={githublink} /> */}
+                  <img width={60} height={60} alt="github" src={githublink} />
                 </a>
               </div>
             </div>
