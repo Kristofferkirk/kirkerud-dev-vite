@@ -34,7 +34,7 @@ const EmailCopyButton = () => {
           id="email-copy"
           type="button"
         >
-          <FontAwesomeIcon size="xs" icon={faCopy} />
+          <FontAwesomeIcon size="lg" icon={faCopy} />
         </button>
       </div>
       {showCopyMessage && <p className="text-center">Copied</p>}

@@ -52,12 +52,12 @@ h3 {
 }
 
 #contact {
-  background-color: #394452;
-
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
-  background-image: url(https://images.pexels.com/photos/4255404/pexels-photo-4255404.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940);
+  background: rgb(104, 75, 235);
+  background: radial-gradient(
+    circle,
+    rgb(118, 226, 217) 0%,
+    rgb(177, 186, 235) 100%
+  );
 }
 
 .skillProgressBar {
