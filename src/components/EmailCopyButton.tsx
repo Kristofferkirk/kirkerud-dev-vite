@@ -1,10 +1,10 @@
-﻿import { faCheckSquare, faCopy } from "@fortawesome/free-solid-svg-icons";
+﻿import { faCopy } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import React from "react";
 
 const EmailCopyButton = () => {
   const defaultValue = "kristoffer@kirkerud.dev";
-  const [showCopyMessage, toggleCopyMessage] = React.useState(false);
+  const [showCopyMessage] = React.useState(false);
   const [inputValue, setInputValue] = React.useState(defaultValue);
   return (
     <>

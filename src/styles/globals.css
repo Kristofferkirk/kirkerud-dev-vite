@@ -6,18 +6,12 @@
 html,
 body {
   padding: 0;
-  background: rgb(238, 174, 202);
-  background: linear-gradient(
-    42deg,
-    rgba(238, 174, 202, 1) 0%,
-    rgba(148, 187, 233, 1) 100%
-  );
   margin: 0;
   scrollbar-width: none; /* For Firefox */
   -ms-overflow-style: none; /* For Internet Explorer and Edge */
   scroll-snap-type: y mandatory;
-  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
-    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+  font-family: "Fira Sans", -apple-system, BlinkMacSystemFont, Segoe UI, Roboto,
+    Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
 }
 body ::-webkit-scrollbar {
   display: none;
@@ -39,25 +33,15 @@ h3 {
 }
 
 #intro {
-  background-color: #ffdee9;
-  background-image: linear-gradient(0deg, #ffdee9 0%, #b5fffc 100%);
+  background: #3c3939;
 }
 
 #skills {
-  background-color: #394452;
-
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-image: url(https://images.pexels.com/photos/4974912/pexels-photo-4974912.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940);
+  background: #3c3939;
 }
 
 #contact {
-  background: rgb(104, 75, 235);
-  background: radial-gradient(
-    circle,
-    rgb(118, 226, 217) 0%,
-    rgb(177, 186, 235) 100%
-  );
+  background: #3c3939;
 }
 
 .skillProgressBar {
