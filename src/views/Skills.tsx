@@ -7,7 +7,6 @@ import { MorphCard } from "./Intro";
 
 const SkillsContainer = styled.div`
   display: flex;
-  margin-top: 50px;
   width: 80%;
   color: white;
   .morph-section {
@@ -27,7 +26,7 @@ export default function Skills() {
   const [appear, setAppear] = useState(false);
   return (
     <Section id="skills">
-      <div className="justify-top text-white font-bold">
+      <div className="justify-top text-white font-bold mt-6">
         <h1>Skillsets & Experience</h1>
       </div>
       <Waypoint
