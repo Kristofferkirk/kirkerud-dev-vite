@@ -1,8 +1,9 @@
 ﻿import { useState } from "react";
 import { Waypoint } from "react-waypoint";
 import styled from "styled-components";
+import { H1 } from "../components/Headings";
 import SkillProgressBar from "../components/SkillProgressBar";
-import { Section } from "../components/wrappers";
+import { Section } from "../components/Wrappers";
 import { MorphCard } from "./Intro";
 
 const SkillsContainer = styled.div`
@@ -22,13 +23,22 @@ const SkillsContainer = styled.div`
   }
 `;
 
+export const HeaderContainer = styled.div`
+  border-radius: 10px;
+  padding: 5px;
+  background: linear-gradient(145deg, #322e2e, #110d0d);
+  margin-top: 50px;
+`;
+
 export default function Skills() {
   const [appear, setAppear] = useState(false);
   return (
     <Section id="skills">
-      <div className="justify-top text-white font-bold mt-6">
-        <h1>Skillsets & Experience</h1>
-      </div>
+      <HeaderContainer className="justify-top text-white font-bold mt-6">
+        <H1 style={{ textShadow: "1px 1px 2px black" }}>
+          Skillsets & Experience
+        </H1>
+      </HeaderContainer>
       <Waypoint
         scrollableAncestor={window}
         key="skills"

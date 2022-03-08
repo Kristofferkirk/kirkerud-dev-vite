@@ -8,6 +8,7 @@ const Section = styled.div`
   flex-direction: column;
   justify-content: space-evenly;
   align-items: center;
+
   scroll-snap-align: start;
   animation: fadeIn 5s;
   -webkit-animation: fadeIn 5s;
