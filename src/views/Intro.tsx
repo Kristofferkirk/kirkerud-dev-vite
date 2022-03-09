@@ -2,6 +2,8 @@
 import { Section } from "../components/Wrappers";
 import styled from "styled-components";
 import { animated, useSpring } from "react-spring";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faCode } from "@fortawesome/free-solid-svg-icons";
 
 export const MorphCard = styled.div`
   padding: 20px;
@@ -13,6 +15,36 @@ export const MorphCard = styled.div`
 const MainTitle = styled.h1`
   color: white;
   font-size: 2rem;
+`;
+
+export const IntroTextSection = styled.span`
+  color: white;
+  margin-top: 10vh;
+  font-size: 3vw;
+  font-style: italic;
+  font-weight: lighter;
+  margin-top: 30px;
+  font-family: Fira Sans;
+  @media only screen and (max-width: 500px) {
+    font-size: 4vw;
+  }
+`;
+
+const ProfileImage = styled.img`
+  max-width: 230px;
+
+  @media only screen and (max-width: 500px) {
+    max-width: 160px;
+    margin-top: 20px;
+    align-self: center;
+  }
+`;
+
+const ProfileImageContainer = styled.div`
+  @media only screen and (max-width: 1151px) {
+    display: flex;
+    justify-content: center;
+  }
 `;
 
 export default function Intro() {
@@ -34,14 +66,93 @@ export default function Intro() {
         >
           <div style={{ flex: "1 0 70%" }}>
             <MainTitle>Fullstack Developer</MainTitle>
-
-            <p style={{ color: "white" }}>Since 2018</p>
-            <p style={{ color: "white" }}>Javascript, Python, C#</p>
-            <p style={{ color: "white" }}>React</p>
+            <p style={{ color: "white", letterSpacing: "2px" }}>Since 2018</p>
+            <p style={{ color: "white", letterSpacing: "2px" }}>
+              Top skills <FontAwesomeIcon icon={faCode} /> :
+              <ol>
+                <li>
+                  <i
+                    className="fa-brands fa-react mr-2"
+                    style={{
+                      color: "#88b5fd",
+                      fontSize: "20px",
+                      width: 20,
+                    }}
+                  />
+                  React
+                </li>
+                <li>
+                  <i
+                    className="fa-brands fa-js mr-2"
+                    style={{
+                      color: "yellow",
+                      fontSize: "20px",
+                      width: 20,
+                      height: 20,
+                    }}
+                  />
+                  Javascript
+                </li>
+                <li>
+                  <i
+                    className="fa-brands fa-html5 mr-2"
+                    style={{
+                      color: "orange",
+                      fontSize: "20px",
+                      width: 20,
+                      height: 20,
+                    }}
+                  />
+                  HTML
+                </li>
+                <li>
+                  <i
+                    className="fa-brands fa-css3 mr-2"
+                    style={{
+                      color: "#378fff",
+                      fontSize: "20px",
+                      width: 20,
+                      height: 20,
+                    }}
+                  />
+                  CSS
+                </li>
+                <li>
+                  <i
+                    className="fa-brands fa-microsoft mr-2"
+                    style={{
+                      color: "green",
+                      fontSize: "20px",
+                      width: 20,
+                      height: 20,
+                    }}
+                  />
+                  C#
+                </li>
+                <li>
+                  <i
+                    className="fa-brands fa-python mr-2"
+                    style={{
+                      color: "white",
+                      fontSize: "20px",
+                      width: 20,
+                      height: 20,
+                    }}
+                  />
+                  Python
+                </li>
+              </ol>
+            </p>
           </div>
-          <div style={{ flex: "1 1 30%" }}>
-            <img style={{ maxWidth: "230px" }} src={profilePicture} />
-          </div>
+          <ProfileImageContainer style={{ flex: "1 1 30%" }}>
+            <ProfileImage src={profilePicture} />
+          </ProfileImageContainer>
+          <IntroTextSection>
+            I’ve been an IT consultant for over three years, i’ve met many
+            clients, users and co-developers during this time and while the
+            views are different, one goal we all had in common: a great
+            experience.
+          </IntroTextSection>
         </MorphCard>
       </animated.div>
     </Section>

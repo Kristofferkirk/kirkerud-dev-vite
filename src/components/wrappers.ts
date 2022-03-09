@@ -4,7 +4,7 @@ const Section = styled.div`
   height: 100vh !important;
   width: 100% !important;
   display: flex;
-  overflow-y: scroll;
+  overflow: auto;
   flex-direction: column;
   justify-content: space-evenly;
   align-items: center;
