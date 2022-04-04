@@ -60,7 +60,7 @@ export default function Contact() {
           />
         </a>
         <div className="flex mt-3 justify-items-center">
-          <div style={{ flex: "1 0 auto" }}>
+          <div style={{ flex: "1 1 auto" }}>
             <p style={{ textAlign: "center" }}>
               Contact me or check out my personal projects
             </p>

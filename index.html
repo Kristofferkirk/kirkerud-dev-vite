@@ -2,16 +2,52 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/src/favicon.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <script
       src="https://kit.fontawesome.com/02e331e478.js"
       crossorigin="anonymous"
     ></script>
-    <title>Kirkerud.Dev👨🏻‍💻</title>
+    <title>⚡ Kirkerud.dev 👨🏻‍💻</title>
   </head>
   <body>
     <div id="root"></div>
     <script type="module" src="/src/main.tsx"></script>
+    <script type="module">
+      // Import the functions you need from the SDKs you need
+
+      import { initializeApp } from "https://www.gstatic.com/firebasejs/9.6.10/firebase-app.js";
+
+      import { getAnalytics } from "https://www.gstatic.com/firebasejs/9.6.10/firebase-analytics.js";
+
+      // TODO: Add SDKs for Firebase products that you want to use
+
+      // https://firebase.google.com/docs/web/setup#available-libraries
+
+      // Your web app's Firebase configuration
+
+      // For Firebase JS SDK v7.20.0 and later, measurementId is optional
+
+      const firebaseConfig = {
+        apiKey: "AIzaSyCaFs5lJShimOYvrYJ4e5zG9NT_jAuHMZQ",
+
+        authDomain: "kirkerud-dev.firebaseapp.com",
+
+        projectId: "kirkerud-dev",
+
+        storageBucket: "kirkerud-dev.appspot.com",
+
+        messagingSenderId: "987015271846",
+
+        appId: "1:987015271846:web:2ad1df3d042546a6ec2b67",
+
+        measurementId: "G-ZSPC9040TH",
+      };
+
+      // Initialize Firebase
+
+      const app = initializeApp(firebaseConfig);
+
+      const analytics = getAnalytics(app);
+    </script>
   </body>
 </html>

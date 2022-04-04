@@ -1,10 +1,10 @@
 import styles from "./styles/main.module.css";
-import { Container } from "./components/Wrappers";
 import Intro from "./views/Intro";
 import Skills from "./views/Skills";
 import Contact from "./views/Contact";
 import styled from "styled-components";
 import { H1 } from "./components/Headings";
+import { Container } from "./components/Wrappers";
 
 const StickyHeader = styled(H1)`
   position: fixed;

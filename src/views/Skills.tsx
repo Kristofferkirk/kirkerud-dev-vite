@@ -36,6 +36,10 @@ export const HeaderContainer = styled.div`
   padding: 5px;
   background: linear-gradient(145deg, #322e2e, #110d0d);
   margin-top: 50px;
+
+  @media (min-width: 1300px) {
+    margin-top: 160px;
+  }
 `;
 
 export default function Skills() {
@@ -51,7 +55,7 @@ export default function Skills() {
   function smoothAutoScroll() {
     if (cardRef.current) {
       cardRef.current.scrollBy(0, 1);
-      setTimer(setTimeout(smoothAutoScroll, 100));
+      setTimer(window.setTimeout(smoothAutoScroll, 100));
     }
   }
   function stopAutoScroll() {
