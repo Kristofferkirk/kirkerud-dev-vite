@@ -4,6 +4,7 @@ import styled from "styled-components";
 import { animated, useSpring } from "react-spring";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faCode } from "@fortawesome/free-solid-svg-icons";
+import { checkIfSafari } from "../utils/browserCheck";
 
 export const MorphCard = styled.div`
   padding: 20px;
@@ -52,8 +53,9 @@ export default function Intro() {
     to: { opacity: 1 },
     from: { opacity: 0 },
   });
+  const isSafari = checkIfSafari();
   return (
-    <Section id="intro">
+    <Section id="intro" style={isSafari ? { marginTop: "20px" } : {}}>
       <animated.div style={props}>
         <MorphCard
           style={{
