@@ -39,6 +39,9 @@ export const HeaderContainer = styled.div`
 
   @media (min-width: 1300px) {
     margin-top: 160px;
+    h2 {
+      font-size: 2rem;
+    }
   }
 `;
 

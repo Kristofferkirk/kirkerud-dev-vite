@@ -13,6 +13,18 @@ export const MorphCard = styled.div`
   background: linear-gradient(145deg, #322e2e, #3c3737);
 `;
 
+const IntroMorphCard = styled(MorphCard)<{ isSafari: boolean }>`
+  display: flex;
+  flex-wrap: wrap;
+  align-content: center;
+  box-shadow: none;
+  z-index: 2;
+
+  @media only screen and (max-width: 1200px) {
+    margin-top: ${(p) => (p.isSafari ? 100 : 20)}px;
+  }
+`;
+
 const MainTitle = styled.h1`
   color: white;
   font-size: 2rem;
@@ -55,17 +67,9 @@ export default function Intro() {
   });
   const isSafari = checkIfSafari();
   return (
-    <Section id="intro" style={isSafari ? { marginTop: "20px" } : {}}>
+    <Section id="intro">
       <animated.div style={props}>
-        <MorphCard
-          style={{
-            display: "flex",
-            flexWrap: "wrap",
-            alignContent: "center",
-            boxShadow: "none",
-            zIndex: 2,
-          }}
-        >
+        <IntroMorphCard isSafari={isSafari}>
           <div style={{ flex: "1 0 70%" }}>
             <MainTitle>Fullstack Developer</MainTitle>
             <p style={{ color: "white", letterSpacing: "2px" }}>Since 2018</p>
@@ -155,7 +159,7 @@ export default function Intro() {
             views are different, one goal we all had in common: a great
             experience.
           </IntroTextSection>
-        </MorphCard>
+        </IntroMorphCard>
       </animated.div>
     </Section>
   );

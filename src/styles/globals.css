@@ -49,6 +49,9 @@ h3 {
   background-repeat: no-repeat;
   background-size: cover;
   background-attachment: fixed;
+  scrollbar-width: none; /* For Firefox */
+  -ms-overflow-style: none; /* For Internet Explorer and Edge */
+  scroll-snap-type: y mandatory;
 }
 
 .skillProgressBar {
